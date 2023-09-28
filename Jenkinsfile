@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'cd /root/p7-office/'
+                sh 'cd /root/p7-office'
                 sh 'molecule test -s default'
             }
         }
