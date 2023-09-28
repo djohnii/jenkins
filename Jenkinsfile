@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Check') { 
             steps {
-                sh 'python pip install molecule==3.5.2 molecule_docker'
+                sh 'pip install molecule==3.5.2 molecule_docker'
                 sh 'pip3 install "molecule==3.5.2" "molecule_docker"'
                 sh "docker pull aragast/netology:latest"
             }
